@@ -1,12 +1,5 @@
 import PropTypes from "prop-types";
-import { Section, Title, StatsList, StatsItem, StatsLabel, StatsValue } from "./Statistics.styled";
-
-const createRendomColor = () => {
-    const red = Math.floor(Math.random() * (256 - 0)) + 0;
-    const green = Math.floor(Math.random() * (256 - 0)) + 0;
-    const blue = Math.floor(Math.random() * (256 - 0)) + 0;
-    return `rgb(${red},${green},${blue})`;
-};
+import { Section, Title, StatsList, StatsItem, StatsLabel, StatsValue, createRendomColor} from "./Statistics.styled";
 
 const Statistics = ({title,stats}) => {
     return (
